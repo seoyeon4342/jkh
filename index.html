@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>covid</title>
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        h1 {display: none;}
+        section {max-width: 1000px; margin: auto; border: 5px dashed red; margin-top: 50px; position: relative;}
+        img {display: block;}
+        img:not(:first-of-type) {position: absolute;}
+
+        [src *= "bg4"] {width: 1000px;}
+        [src *= "4-1.png"] {top: 14%; left: 0; width: 60%; animation: rotate 1s 1s both;} 
+        [src *= "4-2"] {top: 0; left: 20px; width: 60%; animation: scaleX 1s 2s both;}
+        [src *= "4-3"] {bottom: 0; left: 0; width: 30%; animation: up 1.5s both;}
+        [src *= "4-4"] {top: 0; right: 1%; width: 30%; animation: rotate2 1.2s 0.5s both}
+        [src *= "4-5"] {bottom: 0; right: 10%; width: 40%; animation: toleft 2s 1.5s both}
+        [src *= "4-6"] {bottom: 25%; right: 0; width: 20%; animation: new 1s 0.3s both;}
+        [src *= "4-7"] {bottom: 15%; right: 0; width: 20%; animation: fact 1s 0.8s both;}
+        [src *= "4-8"] {bottom: 5%; right: 0; width: 20%; animation: ter 1s 1.3s both;}
+        [src *= "4-9"] {top: 0; right: 0; width: 13%; animation: twin 3s 1s both infinite;}
+        [src *= "4-10"] {top: 20%; left: 55%; width: 30%; animation: down 1s 3s both;}
+        [src *= "4-11"] {top: 92%; left: 30%; width: 30%;}
+
+        @keyframes rotate {
+            0% {transform: rotate(720deg) scale(0);} 
+            100% {transform: rotate(0) scale(100%);}
+        } 
+        @keyframes rotate2 {
+            0% {transform: rotate(360deg);} 
+            100% {transform: rotate(0);}
+        } 
+        @keyframes scaleX {
+            0% {transform: scaleX(0);}
+            100% {transform: scaleX(100%);}
+        }
+        @keyframes up {
+            from {opacity: 0; top: initial; bottom: -20%;}
+            to {opacity: 1; top: initial; bottom: 0}
+        }
+        @keyframes down {
+            from {opacity: 0; top: 0; bottom: initial;}
+            to {opacity: 1; top: 1; bottom: initial;}
+        }
+        @keyframes toleft {
+            from {opacity: 0; left: initial; right: 0;}
+            to {opacity: 1; left: initial; right: 1;}
+        }
+        @keyframes new {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @keyframes fact {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @keyframes ter {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @keyframes twin {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>코비드 극복하기</h1>
+        <img src="images/bg4.jpg" alt="배경">
+        <img src="images/4-1.png" alt="마스크">
+        <img src="images/4-2.png" alt="타이틀">
+        <img src="images/4-3.png" alt="코멘트">
+        <img src="images/4-4.png" alt="손소독제와 마스크">
+        <img src="images/4-5.png" alt="손소독제">
+        <img src="images/4-6.png" alt="뉴에티켓">
+        <img src="images/4-7.png" alt="팩트체크">
+        <img src="images/4-8.png" alt="치유레터">
+        <img src="images/4-9.png" alt="빛">
+        <img src="images/4-10.png" alt="돋보기">
+        <img src="images/4-11.png" alt="주소">
+        
+    </section>
+</body>
+</html>
